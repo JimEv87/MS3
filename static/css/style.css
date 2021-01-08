@@ -1,0 +1,12 @@
+.brand-logo img {
+    height: 150px;
+}
+
+nav.nav-extended {
+    background-color: #eba50e;
+    height: 150px;
+}
+
+.nav-wrapper a {
+    color: #160eed;
+}
