@@ -108,12 +108,16 @@ def add_recipe():
             "ingredients": request.form.get("ingredients"),
             "method": request.form.get("method")
         }
-        
         mongo.db.recipe.insert_one(recipe)
         flash("Recipe Successfully Added")
         return redirect(url_for("get_recipes"))
 
     return render_template("add_recipe.html")
+
+@app.route("/recipe_template/<recipe_id>", methods=["GET"])
+def recipe_template(recipe_id):
+    recipe = mongo.db.recipe.find_one({"_id": ObjectId(recipe_id)})
+    return render_template("recipe_template.html", recipe=recipe)
 
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
