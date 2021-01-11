@@ -10,41 +10,17 @@
 
 
 <div class="slideshow">
+    {% for info in recipe %}
     <div>
-        <p>Dish Name</p><img src="/static/img/img_pending.jpg" alt="">
-        <p>Prep Time</p>
-        <p>Cook Time</p>
+        <p>{{ info.dish_name }}</p>
+        <img src="/static/img/img_pending.jpg" alt="">
+        <p>Prep time: {{ info.prep_time }}minutes</p>
+        <p>Cook time: {{ info.cook_time }}minutes</p>
     </div>
-    <div>
-        <p>Dish Name</p><img src="/static/img/img_pending.jpg" alt="">
-        <p>Prep Time</p>
-        <p>Cook Time</p>
-    </div>
-    <div>
-        <p>Dish Name</p><img src="/static/img/img_pending.jpg" alt="">
-        <p>Prep Time</p>
-        <p>Cook Time</p>
-    </div>
-    <div>
-        <p>Dish Name</p><img src="/static/img/img_pending.jpg" alt="">
-        <p>Prep Time</p>
-        <p>Cook Time</p>
-    </div>
-    <div>
-        <p>Dish Name</p><img src="/static/img/img_pending.jpg" alt="">
-        <p>Prep Time</p>
-        <p>Cook Time</p>
-    </div>
-    <div>
-        <p>Dish Name</p><img src="/static/img/img_pending.jpg" alt="">
-        <p>Prep Time</p>
-        <p>Cook Time</p>
-    </div>
+    
+    {% endfor %}
 </div>
 
 
-<!-- {% for dish_name in recipes %}
-        {{ dish_name.dish_name}}<br>
-    {% endfor %} -->
 
 {% endblock %}
