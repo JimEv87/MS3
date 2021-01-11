@@ -104,13 +104,12 @@ def add_recipe():
         recipe = {
             "dish_name": request.form.get("dish_name"),
             "prep_time": request.form.get("prep_time"),
-            "cook_time": request.form.get("cook_time")
+            "cook_time": request.form.get("cook_time"),
+            "ingredients": request.form.get("ingredients"),
+            "method": request.form.get("method")
         }
-        dish_name = {
-            "dish_name": request.form.get("dish_name")
-        }
+        
         mongo.db.recipe.insert_one(recipe)
-        mongo.db.recipes.insert_one(dish_name)
         flash("Recipe Successfully Added")
         return redirect(url_for("get_recipes"))
 
