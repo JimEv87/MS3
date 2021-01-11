@@ -1,5 +1,12 @@
-$(document).ready(function(){
-    $(".sidenav").sidenav({edge: "right"});
-    $('.carousel').carousel();
-  });
+$(document).ready(function () {
+    $(".sidenav").sidenav({ edge: "right" });
+    $('.slideshow').slick({
+        infinite: true,
+        slidesToShow: 3,
+        slidesToScroll: 3
+    });
+});
+
+
+
 
