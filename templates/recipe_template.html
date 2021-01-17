@@ -5,6 +5,8 @@
 
 <h2>{{ recipe.dish_name }}</h2>
 
+<img src="{{ recipe.image_url }}" alt="" onerror="this.src='/static/img/img_pending.jpg'">
+
 <p>Prep time: {{ recipe.prep_time }} minutes</p>
 
 <p>Cook time: {{ recipe.cook_time }} minutes</p>

@@ -106,7 +106,8 @@ def add_recipe():
             "prep_time": request.form.get("prep_time"),
             "cook_time": request.form.get("cook_time"),
             "ingredients": request.form.get("ingredients"),
-            "method": request.form.get("method")
+            "method": request.form.get("method"),
+            "image_url": request.form.get("image_url")
         }
         mongo.db.recipe.insert_one(recipe)
         flash("Recipe Successfully Added")

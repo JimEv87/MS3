@@ -13,7 +13,7 @@
     {% for info in recipe %}
     <div>
         <a href="{{ url_for('recipe_template', recipe_id=info._id) }}">{{ info.dish_name }}</a>
-        <img src="/static/img/img_pending.jpg" alt="">
+        <a href="{{ url_for('recipe_template', recipe_id=info._id) }}"><img src="{{ info.image_url }}" alt="" onerror="this.src='/static/img/img_pending.jpg'"></a>
         <p>Prep time: {{ info.prep_time }} minutes</p>
         <p>Cook time: {{ info.cook_time }} minutes</p>
     </div>
