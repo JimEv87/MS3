@@ -6,6 +6,7 @@ $(document).ready(function () {
         arrows: false,
         centerMode: true,
         speed: 300,
+        autoplaySpeed: 3000,
         autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
