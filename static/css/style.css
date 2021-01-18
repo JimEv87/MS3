@@ -23,18 +23,43 @@ h3 {
     font-size: 20px;
 }
 
-.hero-text {
+.homepage-text {
     background-color: #cfe1ff;
     padding: 1rem;
-    margin-top: 1rem;
+    margin: 2rem 0;
     text-align: center;
 }
 
-.hero-text h1 {
+.homepage-text h1 {
     margin-top: 1rem;
 }
 
+.sidenav {
+    background-color: #cfe1ff;
+}
+
+.sidenav li>a {
+    color: #160eed;
+}
+
+.search-panel {
+    margin-bottom: 2rem;
+}
+
+.search-btns {
+    min-width: 86px;
+    background-color: #160eed;
+    color: #eba50e;
+    margin-bottom: 3px;
+}
+
+.slide-dishname {
+    text-decoration: none;
+    text-transform: capitalize;
+    font-size: 18px;
+}
+
 .slick-slide img {
-    height: 200px;
-    width: 200px;
+    height: 220px;
+    width: 220px;
 }

@@ -1,22 +1,20 @@
 {% extends "base.html" %}
 {% block content %}
 
-<div class="hero-text">
+<div class="homepage-text">
     <h1>Piece of Cake: Delicious Desserts that are a Piece of Cake to Make</h1>
-    <p><a href="{{ url_for('register') }}">Sign up</a> and submit your own recipes, or simply browse the delicious
-        desserts already provided by our members.</p>
 </div>
 
-<div class="row card-panel grey lighten-5">
+<div class="row card-panel search-panel">
     <form action="{{ url_for('search') }}" method="post" class="col s12">
-        <div class="row valign-wrapper center-align">
+        <div class="center-align">
             <div class="input-field col s12 m8">
                 <input type="text" name="query" id="query" minlength="3" class="validate" required>
-                <label for="query">Search Recipes</label>
+                <label for="query">Have something in mind?</label>
             </div>
             <div class="col s12 m4">
-                <a href="{{ url_for('get_recipes') }}" class="red btn text-shadow">Reset</a>
-                <button type="submit" class="light-blue btn text-shadow">Search</button>
+                <button type="submit" class="search-btns btn">Search</button>
+                <a href="{{ url_for('get_recipes') }}" class="search-btns btn">Reset</a>
             </div>
         </div>
     </form>
@@ -26,10 +24,10 @@
 <div class="slideshow">
     {% for info in recipe %}
     <div>
-        <a href="{{ url_for('recipe_template', recipe_id=info._id) }}">{{ info.dish_name }}</a>
+        <a href="{{ url_for('recipe_template', recipe_id=info._id) }}" class="slide-dishname"><b>{{ info.dish_name }}</b></a>
         <a href="{{ url_for('recipe_template', recipe_id=info._id) }}"><img src="{{ info.image_url }}" alt="" onerror="this.src='/static/img/img_pending.jpg'"></a>
-        <p>Prep time: {{ info.prep_time }} minutes</p>
-        <p>Cook time: {{ info.cook_time }} minutes</p>
+        <p><b>Prep time:</b> {{ info.prep_time }} minutes</p>
+        <p><b>Cook time:</b> {{ info.cook_time }} minutes</p>
     </div>
     
     {% endfor %}
@@ -38,5 +36,9 @@
     <h2>No Results Found</h2>
 {% endif %}
 
+<div class="homepage-text">
+    <p><a href="{{ url_for('register') }}">Sign up</a> and submit your own recipes, or simply browse the delicious
+        desserts already provided by our members.</p>
+</div>
 
 {% endblock %}
