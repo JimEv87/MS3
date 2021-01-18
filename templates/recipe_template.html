@@ -11,9 +11,16 @@
 
 <p>Cook time: {{ recipe.cook_time }} minutes</p>
 
-<p>Ingredients: {{ recipe.ingredients }}</p>
+{% set list = recipe.ingredients.split(',') %}
 
-<p>Method: {{ recipe.method }}</p>
+<p>Ingredients: <br>
+
+    {% for item in list %}
+    <li> {{ item }}</li>
+    {% endfor %}
+</p>
+
+<p>Method: <br> {{ recipe.method }}</p>
 
 
 
