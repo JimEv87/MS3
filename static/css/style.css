@@ -7,8 +7,22 @@ nav.nav-extended {
     height: 150px;
 }
 
+nav .brand-logo {
+    top: -45px;
+}
+
 .nav-wrapper a {
     color: #160eed;
+        
+}
+
+.nav-wrapper li a {
+    border: 2px solid #160eed;
+    border-radius: 5px;
+    margin: 10px;
+    min-width: 113px;
+    text-align: center;
+    font-size: 20px;
 }
 
 h1 {
@@ -51,6 +65,10 @@ h3 {
     background-color: #160eed;
     color: #eba50e;
     margin-bottom: 3px;
+}
+
+.search-btns:hover {
+    background-color: #040aba;
 }
 
 .slide-dishname {
