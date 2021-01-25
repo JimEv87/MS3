@@ -80,6 +80,9 @@ h3 {
 .slick-slide img {
     height: 220px;
     width: 220px;
+    filter: drop-shadow(2px 4px 6px #585858);
+    margin-top: 12px;
+    margin-bottom: 24px;
 }
 
 .cta-btn {
