@@ -25,14 +25,14 @@
                         alt=""></a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="fas fa-bars"></i></a>
                 <ul class="right hide-on-med-and-down">
-                    <li><a href="{{ url_for('get_recipes') }}">Recipes</a></li>
+                    <li><a href="{{ url_for('get_recipes') }}" class="btn-large">Recipes</a></li>
                     {% if session.user %}
-                    <li><a href="{{ url_for('profile', username=session['user']) }}">Profile</a></li>
-                    <li><a href="{{ url_for('add_recipe') }}">Add Recipe</a></li>
-                    <li><a href="{{ url_for('logout') }}">Log Out</a></li>
+                    <li><a href="{{ url_for('profile', username=session['user']) }}" class="btn-large">Profile</a></li>
+                    <li><a href="{{ url_for('add_recipe') }}" class="btn-large">Add Recipe</a></li>
+                    <li><a href="{{ url_for('logout') }}" class="btn-large">Log Out</a></li>
                     {% else %}
-                    <li><a href="{{ url_for('login') }}">Login</a></li>
-                    <li><a href="{{ url_for('register') }}">Register</a></li>
+                    <li><a href="{{ url_for('login') }}" class="btn-large">Login</a></li>
+                    <li><a href="{{ url_for('register') }}" class="btn-large">Register</a></li>
                     {% endif %}
                 </ul>
             </div>
