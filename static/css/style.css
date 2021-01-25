@@ -82,6 +82,38 @@ h3 {
     width: 220px;
 }
 
+.cta-btn {
+    background-color: #225ef5;
+    border-radius: 2px;
+    border: none;
+    color: #eeeeee;
+    cursor: pointer;
+    display: inline-block;
+    padding: 5px 15px;
+    text-align: center;
+    text-decoration: none;
+    animation: glowing 1300ms infinite;
+}
+
+.cta-btn:hover {
+    animation: unset;
+}
+
+@keyframes glowing {
+  0% {
+    background-color: #160eed;
+    box-shadow: 0 0 3px #160eed;
+  }
+  50% {
+    background-color: #225ef5;
+    box-shadow: 0 0 10px #225ef5;
+  }
+  100% {
+    background-color: #160eed;
+    box-shadow: 0 0 3px #160eed;
+  }
+}
+
 @media (min-width: 600px) {
       .valign-wrapper-600 {
           display: flex;
