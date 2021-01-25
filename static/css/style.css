@@ -67,6 +67,10 @@ h3 {
     margin-bottom: 3px;
 }
 
+.search-btns:hover {
+    background-color: #040aba;
+}
+
 .slide-dishname {
     text-decoration: none;
     text-transform: capitalize;
