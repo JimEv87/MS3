@@ -1,3 +1,7 @@
+body {
+    background-color: #f9f9f9;
+}
+
 .brand-logo img {
     height: 150px;
 }
@@ -87,6 +91,21 @@ h3 {
     margin-bottom: 24px;
 }
 
+.recipe-template-img {
+    filter: drop-shadow(2px 4px 6px #585858);
+    margin: 1.5rem 0 2rem;
+    border-radius: 10px;
+    max-width: 100%;
+}
+
+.input-field.col label {
+    left: 2rem;
+}
+
+.input-field>label:not(.label-icon).active {
+        transform: translateY(-25px)
+}
+
 .cta-btn {
     background-color: #225ef5;
     border-radius: 5px;
@@ -99,18 +118,11 @@ h3 {
     text-align: center;
     text-decoration: none;
     animation: glowing 1300ms infinite;
+    margin-right: 8px;
 }
 
 .cta-btn:hover {
     animation: unset;
-}
-
-.input-field.col label {
-    left: 2rem;
-}
-
-.input-field>label:not(.label-icon).active {
-        transform: translateY(-25px)
 }
 
 @keyframes glowing {

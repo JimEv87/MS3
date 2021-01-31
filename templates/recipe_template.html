@@ -5,21 +5,33 @@
 
 <h2>{{ recipe.dish_name }}</h2>
 
-<img src="{{ recipe.image_url }}" alt="" onerror="this.src='/static/img/img_pending.jpg'">
+<img src="{{ recipe.image_url }}" alt="" onerror="this.src='/static/img/img_pending.jpg'" class="recipe-template-img">
 
-<p>Prep time: {{ recipe.prep_time }} minutes</p>
+<p><b>Prep time:</b>  {{ recipe.prep_time }} minutes</p>
 
-<p>Cook time: {{ recipe.cook_time }} minutes</p>
+<p><b>Cook time:</b>  {{ recipe.cook_time }} minutes</p>
 
 {% set list = recipe.ingredients.split(',') %}
 
-<p>Ingredients: <br>
+<p><b>Ingredients:</b>  <br>
 
     {% for item in list %}
     <li> {{ item }}</li>
     {% endfor %}
 </p>
 
-<p>Method: <br> {{ recipe.method }}</p>
+<p><b>Method:</b>  <br> {{ recipe.method }}</p>
+
+<div class="homepage-text">
+    <p>
+        {% if session.user %}
+        <a href="{{ url_for('add_recipe') }}" class="cta-btn">Add Recipe</a>
+        <a href="{{ url_for('get_recipes') }}" class="cta-btn">Recipes</a>
+        {% else %}
+        <a href="{{ url_for('register') }}" class="cta-btn">Sign up</a>
+        <a href="{{ url_for('get_recipes') }}" class="cta-btn">Recipes</a>
+        {% endif %}
+        </p>
+</div>
 
 {% endblock %}
