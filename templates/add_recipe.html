@@ -7,19 +7,19 @@
     <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
         <div class="row">
             <div class="input-field col s12">
-                <input id="dish_name" name="dish_name" minlength="3" maxlength="50" type="text" class="validate" required>
+                 <textarea id="dish_name" name="dish_name" minlength="3" maxlength="50" type="text" class="validate" required></textarea>
                 <label for="dish_name">Dish Name</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input id="prep_time" name="prep_time" type="number" class="validate">
+                <textarea id="prep_time" name="prep_time" type="number" class="validate"></textarea>
                 <label for="prep_time">Prep Time</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <input id="cook_time" name="cook_time" type="number" class="validate">
+                <textarea id="cook_time" name="cook_time" type="number" class="validate"></textarea>
                 <label for="cook_time">Cook Time</label>
             </div>
         </div>

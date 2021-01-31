@@ -105,6 +105,14 @@ h3 {
     animation: unset;
 }
 
+.input-field.col label {
+    left: 2rem;
+}
+
+.input-field>label:not(.label-icon).active {
+        transform: translateY(-25px)
+}
+
 @keyframes glowing {
   0% {
     background-color: #160eed;
