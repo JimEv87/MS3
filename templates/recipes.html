@@ -24,21 +24,31 @@
 <div class="slideshow">
     {% for info in recipe %}
     <div>
-        <a href="{{ url_for('recipe_template', recipe_id=info._id) }}" class="slide-dishname"><b>{{ info.dish_name }}</b></a>
-        <a href="{{ url_for('recipe_template', recipe_id=info._id) }}"><img src="{{ info.image_url }}" alt="" onerror="this.src='/static/img/img_pending.jpg'"></a>
+        <a href="{{ url_for('recipe_template', recipe_id=info._id) }}"
+            class="slide-dishname"><b>{{ info.dish_name }}</b></a>
+        <a href="{{ url_for('recipe_template', recipe_id=info._id) }}"><img src="{{ info.image_url }}" alt=""
+                onerror="this.src='/static/img/img_pending.jpg'"></a>
         <p><b>Prep time:</b> {{ info.prep_time }} minutes</p>
         <p><b>Cook time:</b> {{ info.cook_time }} minutes</p>
     </div>
-    
+
     {% endfor %}
 </div>
 {% else %}
-    <h2>No Results Found</h2>
+<h2>No Results Found</h2>
 {% endif %}
 
 <div class="homepage-text">
-    <p><a href="{{ url_for('register') }}" class="cta-btn">Sign up</a> and submit your own recipes, or simply browse the delicious
-        desserts already provided by our members.</p>
+    <p>
+        {% if session.user %}
+        <a href="{{ url_for('add_recipe') }}" class="cta-btn">Submit</a> your own recipes, or simply browse the delicious desserts already provided by our members.
+        
+        {% else %}
+        <a href="{{ url_for('register') }}" class="cta-btn">Sign up</a> and submit your own recipes, or simply browse the delicious desserts already provided by our members.
+
+        {% endif %}
+    </p>
 </div>
 
 {% endblock %}
+

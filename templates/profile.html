@@ -5,12 +5,35 @@
     <div class="col s12 m8 offset-m2">
         <div class="card-panel">
             <h3 class="center-align">
-                {{ username }}'s Profile
+                {{ username }}'s Recipe's
             </h3>
         </div>
     </div>
 </div>
 
+{% for info in recipe %}
+    {% if session.user == recipe.created_by %}
 
+    <h2>{{ info.dish_name }}</h2>
+
+    <img src="{{ recipe.image_url }}" alt="" onerror="this.src='/static/img/img_pending.jpg'" class="recipe-template-img">
+
+    <p><b>Prep time:</b> {{ info.prep_time }} minutes</p>
+
+    <p><b>Cook time:</b> {{ info.cook_time }} minutes</p>
+
+    {% set list = info.ingredients.split(',') %}
+
+    <p><b>Ingredients:</b> <br>
+
+        {% for item in list %}
+        <li> {{ item }}</li>
+        {% endfor %}
+    </p>
+
+    <p><b>Method:</b> <br> {{ info.method }}</p>
+    
+    {% endif %}
+{% endfor %}
 
 {% endblock %}
