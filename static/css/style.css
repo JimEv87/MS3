@@ -144,6 +144,29 @@ h3 {
   }
 }
 
+.method-list {
+  margin: 0 0 1.5em;
+  padding: 0;
+  counter-reset: item;
+}
+
+.method-list > li {
+  margin: 0 0 8px;
+  padding: 0 0 0 2em;
+  text-indent: -2em;
+  list-style-type: none;
+  counter-increment: item;
+}
+
+.method-list > li:before {
+  display: inline-block;
+  width: 1em;
+  padding-right: 0.5em;
+  font-weight: bold;
+  text-align: right;
+  content: counter(item) ".";
+}
+
 @media (min-width: 600px) {
       .valign-wrapper-600 {
           display: flex;

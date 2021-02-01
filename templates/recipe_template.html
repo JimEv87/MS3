@@ -20,7 +20,15 @@
     {% endfor %}
 </p>
 
-<p><b>Method:</b>  <br> {{ recipe.method }}</p>
+{% set list = recipe.method.split('.') %}
+
+<p><b>Method:</b>  <br>
+    <ol class="method-list">
+        {% for item in list %}
+            <li> {{ item }} </li>
+        {% endfor %}
+    </ol>
+</p>
 
 <div class="homepage-text">
     <p>
