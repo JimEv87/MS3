@@ -31,6 +31,16 @@ $(document).ready(function () {
     });
 });
 
+var input = document.getElementById('username');
 
+input.oninvalid = function(event) {
+    event.target.setCustomValidity('Username should be between 5 and 15 characters: letters and numbers only');
+}
+
+var input = document.getElementById('password');
+
+input.oninvalid = function(event) {
+    event.target.setCustomValidity('Password should be between 5 and 15 characters: letters and numbers only');
+}
 
 

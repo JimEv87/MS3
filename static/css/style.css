@@ -144,6 +144,8 @@ h3 {
   }
 }
 
+/* stackoverflow soltuion for bold list numbers */
+
 .method-list {
   margin: 0 0 1.5em;
   padding: 0;

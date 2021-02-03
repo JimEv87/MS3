@@ -11,8 +11,7 @@
     </div>
 </div>
 
-{% for info in recipe %}
-    {% if session.user == recipe.created_by %}
+{% for info in user_recipes %}
 
     <h2>{{ info.dish_name }}</h2>
 
@@ -32,8 +31,7 @@
     </p>
 
     <p><b>Method:</b> <br> {{ info.method }}</p>
-    
-    {% endif %}
-{% endfor %}
+
+{% endfor %} 
 
 {% endblock %}
