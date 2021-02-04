@@ -169,6 +169,22 @@ h3 {
   content: counter(item) ".";
 }
 
+.user-recipes {
+    height: 1200px;
+    overflow: auto;
+    padding: 2rem;
+}
+
+.user-recipes p,
+.user-recipes li {
+    text-align: left;
+    padding-left: 1rem;
+}
+
+.user-recipes img {
+    padding: 1rem;
+}
+
 @media (min-width: 600px) {
       .valign-wrapper-600 {
           display: flex;

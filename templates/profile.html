@@ -11,27 +11,35 @@
     </div>
 </div>
 
+<div class="row">
 {% for info in user_recipes %}
+<div class="col s12 l6">
+    <div class="col card center-align user-recipes">
+        
+        <h2>{{ info.dish_name }}</h2>
 
-    <h2>{{ info.dish_name }}</h2>
+        <img src="{{ info.image_url }}" alt="" onerror="this.src='/static/img/img_pending.jpg'" class="recipe-template-img">
 
-    <img src="{{ info.image_url }}" alt="" onerror="this.src='/static/img/img_pending.jpg'" class="recipe-template-img">
+        <p><b>Prep time:</b> {{ info.prep_time }} minutes</p>
 
-    <p><b>Prep time:</b> {{ info.prep_time }} minutes</p>
+        <p><b>Cook time:</b> {{ info.cook_time }} minutes</p>
 
-    <p><b>Cook time:</b> {{ info.cook_time }} minutes</p>
+        {% set list = info.ingredients.split(',') %}
 
-    {% set list = info.ingredients.split(',') %}
+        <p><b>Ingredients:</b> <br>
 
-    <p><b>Ingredients:</b> <br>
+            {% for item in list %}
+            <li> {{ item }}</li>
+            {% endfor %}
+        </p>
 
-        {% for item in list %}
-        <li> {{ item }}</li>
-        {% endfor %}
-    </p>
+        <p><b>Method:</b> <br> {{ info.method }}</p>
 
-    <p><b>Method:</b> <br> {{ info.method }}</p>
+    </div>
+</div>
+    
 
 {% endfor %} 
 
+</div>
 {% endblock %}
