@@ -20,6 +20,11 @@
 
         <img src="{{ info.image_url }}" alt="" onerror="this.src='/static/img/img_pending.jpg'" class="recipe-template-img">
 
+        <div class="center-align">
+            <a href="{{ url_for('edit_recipe', recipe_id=info._id) }}" class="btn">Edit</a>
+            <a href="" class="btn">Delete</a>
+        </div>
+
         <p><b>Prep time:</b> {{ info.prep_time }} minutes</p>
 
         <p><b>Cook time:</b> {{ info.cook_time }} minutes</p>
