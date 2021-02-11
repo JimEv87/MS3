@@ -185,6 +185,12 @@ h3 {
     padding: 1rem;
 }
 
+.login-requirements {
+    color: #ff0000;
+    font-size: 12px;
+    text-align: center;
+}
+
 @media (min-width: 600px) {
       .valign-wrapper-600 {
           display: flex;
