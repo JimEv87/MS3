@@ -173,6 +173,7 @@ h3 {
     height: 1200px;
     overflow: auto;
     padding: 2rem;
+    min-width: 100%;
 }
 
 .user-recipes p,
