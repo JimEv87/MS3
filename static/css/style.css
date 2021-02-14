@@ -234,13 +234,7 @@ h3 {
         right: -40px;
     }
 
-    .slick-slide img {
-        margin-left: unset;
-        margin-right: unset;
-    }
-
     .slick-slide {
-        text-align: left;
         padding: 10px;
     }
 }
