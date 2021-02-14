@@ -3,17 +3,19 @@ $(document).ready(function () {
     $('.slideshow').slick({
         infinite: true,
         dots: false,
-        arrows: false,
-        centerMode: true,
+        arrows: true,
+        prevArrow:"<button type='button' class='slick-prev pull-left'><i class='fa fa-angle-left' aria-hidden='true'></i></button>",
+        nextArrow:"<button type='button' class='slick-next pull-right'><i class='fa fa-angle-right' aria-hidden='true'></i></button>",
         speed: 300,
-        autoplaySpeed: 3000,
+        autoplaySpeed: 60000,
         autoplay: true,
         slidesToShow: 1,
         slidesToScroll: 1,
         mobileFirst: true,
         responsive: [
+            
             {
-                breakpoint: 767,
+                breakpoint: 500,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
@@ -25,7 +27,14 @@ $(document).ready(function () {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                 }
-            }
+            },
+            {
+                breakpoint: 1400,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
         ]
 
     });

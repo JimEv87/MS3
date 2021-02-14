@@ -93,6 +93,24 @@ h3 {
     filter: drop-shadow(2px 4px 6px #585858);
     margin-top: 12px;
     margin-bottom: 24px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slick-slide {
+    text-align: center;
+}
+
+.slick-prev {
+    position: absolute;
+    bottom: 50%;
+    left: 0px;
+}
+
+.slick-next {
+    position: absolute;
+    bottom: 50%;
+    right: 0px;
 }
 
 .recipe-template-img {
@@ -204,5 +222,25 @@ h3 {
         .slick-slide img {
         height: 220px;
         width: 220px;
+    }
+}
+
+@media (min-width: 900px) {
+    .slick-prev {
+        left: -40px;
+    }
+
+    .slick-next {
+        right: -40px;
+    }
+
+    .slick-slide img {
+        margin-left: unset;
+        margin-right: unset;
+    }
+
+    .slick-slide {
+        text-align: left;
+        padding: 10px;
     }
 }
