@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+{% block content %}
+
+<div class="center-align center-valign">
+    <h1>Sorry</h1>
+    <h2>You need to be logged in to view this page</h2>
+
+    <p>Please either <a href="{{ url_for('register') }}" class="cta-btn">Login</a> or browse as a guest <a href="{{ url_for('get_recipes') }}" class="cta-btn">Home</a></p> 
+</div>
+{% endblock %}
