@@ -10,7 +10,7 @@
     <form class="col s12" method="POST" action="{{ url_for('add_recipe') }}">
         <div class="row">
             <div class="input-field col s12">
-                 <textarea id="dish_name" name="dish_name" minlength="3" maxlength="50" type="text" pattern="^[a-zA-Z0-9]{5,15}$" class="validate" required></textarea>
+                 <textarea id="dish_name" name="dish_name" minlength="3" maxlength="50" type="text" class="validate" required></textarea>
                 <label for="dish_name">Dish Name</label>
             </div>
         </div>
@@ -28,19 +28,19 @@
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <textarea id="ingredients" name="ingredients" pattern="^[a-zA-Z0-9]{5,15}$" type="text" class="validate"  required></textarea>
+                <textarea id="ingredients" name="ingredients" type="text" class="validate"  required></textarea>
                 <label for="ingredients">Ingredients</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <textarea id="method" name="method" pattern="^[a-zA-Z0-9]{5,15}$" type="text" class="validate"  required></textarea>
+                <textarea id="method" name="method" type="text" class="validate"  required></textarea>
                 <label for="method">Method</label>
             </div>
         </div>
         <div class="row">
             <div class="input-field col s12">
-                <textarea id="image_url" name="image_url" type="text" class="validate"  required></textarea>
+                <textarea id="image_url" name="image_url" type="text" class="validate"></textarea>
                 <label for="image_url">Image URL - if you have one</label>
             </div>
         </div>
