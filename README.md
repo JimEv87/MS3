@@ -25,7 +25,7 @@ I took a Mobile-First approach to developing Piece of Cake but the website is eq
 - As a user, I want to be able to view the recipes I have submitted and have the option to edit or delete them.
 
 
-### Wireframes
+## Wireframes
 
 I used [Balsamiq](https://balsamiq.com/) to design some wireframes which can be seen [here](https://github.com/JimEv87/MS3/tree/master/wireframes)
 
@@ -72,16 +72,16 @@ I used [Balsamiq](https://balsamiq.com/) to design some wireframes which can be 
 - An improved and more detailed search function.
 - Further defensive programming to prevent completely blank entries
 
-### Technologies Used
+## Technologies Used
 
-## Front End
+### Front End
 
 - [HTML5](https://en.wikipedia.org/wiki/HTML5) 
 - [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) 
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript) 
 - [Materialize](https://materializecss.com/) 
 
-## Back End
+### Back End
 
 - [MongoDB](https://en.wikipedia.org/wiki/MongoDB) 
 - [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
@@ -89,41 +89,46 @@ I used [Balsamiq](https://balsamiq.com/) to design some wireframes which can be 
 - [werkzeug.security](https://werkzeug.palletsprojects.com/en/1.0.x/utils/)
 - [Python](https://www.python.org/)
 
-## Deployment
+### Deployment
 
 - [Heroku](https://dashboard.heroku.com/)
 - [Github](https://github.com/)
 - [Gitpod](https://gitpod.io/)
 
-## Validation
+### Validation
 
 - [HTML Validator](https://validator.w3.org/nu/)
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
 - [JavaScript Validator](https://jshint.com/) 
 - [Python Validator](http://pep8online.com/)
 
-## Design and Presentation
+### Design and Presentation
 
 - [Balsamiq](https://balsamiq.com/) to design the wireframes
 - [Am I Responsive?](http://ami.responsivedesign.is/#) to test the view of the site on different devices
 
-### Testing
+## Testing
 
 
                                                                                             
-### Deployment
+## Deployment
 
+This project is stored in a GitHub repository and hosted on Heroku.
 
+This project was deployed to GitHub pages as follows:
+1. Login to GitHub and open the repository
+2. Click on Settings
+3. Scroll down to the GitHub Pages 
+4. Below Source, change the drop-down selection from None to Master Branch
+5. The automatically refreshes and the site is now deployed
+
+I used only one branch for this project.
 
 ### To Make a Clone:
 
+1. Click on 'Code' in the GitHub repository menu and copy the given URL  
+2. In your command prompt type 'cd' followed by the director you wish to store your repository in and press enter
+3. In your command prompt type 'git clone' followed by the URL copied in step 1 
 
 ## Credits
-
-### Content
-
-### Media
-
-
-### Acknowledgements
 

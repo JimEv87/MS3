@@ -186,6 +186,10 @@ button:focus {
   counter-increment: item;
 }
 
+.method-list li:last-of-type {
+    display: none;
+}
+
 .method-list > li:before {
   display: inline-block;
   width: 1em;
