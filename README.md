@@ -4,7 +4,7 @@
 
 For my Practical Python and Data-Centric Development Milestone Project I have decided to create an interactive Dessert Recipe website that provides an enjoyable user experience which in turn will encourage repeat use.
 
-Users can browse the attractively displayed range of desserts and then click to view the full recipe, or use the seach functionality tto quickly find something already in mind. Users are encouraged to Register/Log In to submit a recipe of their own.
+Users can browse the attractively displayed range of desserts and then click to view the full recipe, or use the seach functionality to quickly find something already in mind. Users are encouraged to Register/Log In to submit a recipe of their own.
 
 You can view my project [here](https://ms3-piece-of-cake.herokuapp.com/get_recipes)
 
@@ -22,11 +22,12 @@ I took a Mobile-First approach to developing Piece of Cake but the website is eq
 - As a user, I want navigation and use to be simple and intuative.
 - As a user, I want to be able to search for a recipe that I'm interested.
 - As a user, I want to be able to easily submit my own recipes.
+- As a user, I want to be able to view the recipes I have submitted and have the option to edit or delete them.
 
 
 ### Wireframes
 
-I used [Balsamiq](https://balsamiq.com/) to design some wireframes which can be seen [here]()
+I used [Balsamiq](https://balsamiq.com/) to design some wireframes which can be seen [here](https://github.com/JimEv87/MS3/tree/master/wireframes)
 
 ## Features
 
