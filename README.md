@@ -40,6 +40,7 @@ I used [Balsamiq](https://balsamiq.com/) to design some wireframes which can be 
 - An easy to use search bar for finding a specific recipe 
 - Each recipe displays key info (Dish Name, Image, Prep Time and Cook Time) and also acts a link to a full recipe page for the recipe selected.
 - A clear and uncluttered layout allows the recipes themselves to take full focus.
+- A 'glowing' call to action button to encourage users to Sign Up.
 
 #### Recipe Page
 
@@ -48,32 +49,69 @@ I used [Balsamiq](https://balsamiq.com/) to design some wireframes which can be 
 #### Register and Login Pages
 
 - The Piece of Cake logo header acts as a link back to the homepage.
-- Users must provide a username and password to register. No personal details are required to use Piece of Cake.
+- Users must provide a username and password to register. No personal details are required to use Piece of Cake; this is to encourage more users to sign up.
+- Defensive programming here ensures all inputs are between 5 - 15 characters and are numbers & letters only.
 
 #### Add Recipe
 
 - Once registered and logged in, users can access the Add Recipe page.
 - A clear and simple form is presented to the user for them to submit their recipe details.
+- Providing an image is optional to increase accessibility. If no image is provided then a 'Pending Image' is provided. 
+- Defensive programming here ensures all time entries are numbers only, and double spacing is prevented to discourage blank entries.
+
+#### Profile Page
+
+- Once logged in, users can view their Profile page which displays all recipes submitted by that user.
+- Users can read, update and delete their recipes from their Profile page.
+- Defensive programming here ensures you can only view the Profile page if you are logged in, otherwise you are redirected to the custom error page with links for returning Home or to Sign Up.
 
 ### Features Left to Implement
 
+- An 'Upload Photo' feature as opposed to the current URL input method.
+- A rating system which allows users to rate other recipes, and the top ones be displayed in a prominant position on the homepage.
+- An improved and more detailed search function.
+- Further defensive programming to prevent completely blank entries
 
-## Technologies Used
+### Technologies Used
+
+## Front End
+
+- [HTML5](https://en.wikipedia.org/wiki/HTML5) 
+- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) 
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) 
+- [Materialize](https://materializecss.com/) 
+
+## Back End
+
+- [MongoDB](https://en.wikipedia.org/wiki/MongoDB) 
+- [Flask](https://en.wikipedia.org/wiki/Flask_(web_framework))
+- [bson.objectid](https://www.npmjs.com/package/bson-objectid)
+- [werkzeug.security](https://werkzeug.palletsprojects.com/en/1.0.x/utils/)
+- [Python](https://www.python.org/)
+
+## Deployment
+
+- [Heroku](https://dashboard.heroku.com/)
+- [Github](https://github.com/)
+- [Gitpod](https://gitpod.io/)
+
+## Validation
+
+- [HTML Validator](https://validator.w3.org/nu/)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)
+- [JavaScript Validator](https://jshint.com/) 
+- [Python Validator](http://pep8online.com/)
+
+## Design and Presentation
 
 - [Balsamiq](https://balsamiq.com/) to design the wireframes
-- [HTML5](https://en.wikipedia.org/wiki/HTML5) to structure and present the content
-- [CSS3](https://en.wikipedia.org/wiki/Cascading_Style_Sheets) to style the content
-- [JavaScript](https://en.wikipedia.org/wiki/JavaScript) for the logic and interactivity
-- [GitHub](https://github.com/) to host the project
-- [GitPod](https://gitpod.io/) to develop the project
 - [Am I Responsive?](http://ami.responsivedesign.is/#) to test the view of the site on different devices
 
-
-## Testing
+### Testing
 
 
                                                                                             
-## Deployment
+### Deployment
 
 
 
