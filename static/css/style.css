@@ -2,6 +2,30 @@ body {
     background-color: #f9f9f9;
 }
 
+.loadup #load-animation {
+    height: 5000px;
+    width: 5000px;
+    border-radius: 50%;
+    background-color: #eba50e;
+    position: absolute;
+    top: -2000px;
+    left: -2000px;
+    z-index: 10000;
+}
+
+#load-animation {
+    height: 0px;
+    width: 0px;
+    border-radius: 50%;
+    background-color: #160eed;
+    position: absolute;
+    top: 22px;
+    left: 49%;
+    z-index: 20000;
+    transition: all 1s ease-out;
+}
+
+
 .brand-logo img {
     height: 150px;
 }
@@ -250,3 +274,10 @@ button:focus {
         padding: 10px;
     }
 }
+
+@media (min-width: 992px) {
+    #load-animation {
+        left: 65px;
+    }
+}
+

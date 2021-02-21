@@ -95,3 +95,7 @@ $(method).keyup(function() {
     let removeDoubleSpaces = methodValue.replace("  ", " ");
     $(method).val(removeDoubleSpaces);
 });
+
+window.onload = function () {
+            document.documentElement.classList.remove('loadup');
+        };
