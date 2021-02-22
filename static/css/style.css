@@ -3,14 +3,14 @@ body {
 }
 
 .loadup #load-animation {
-    height: 5000px;
-    width: 5000px;
+    height: 4000px;
+    width: 4000px;
     border-radius: 50%;
     background-color: #eba50e;
     position: absolute;
     top: -2000px;
     left: -2000px;
-    z-index: 10000;
+    z-index: 5;
 }
 
 #load-animation {
@@ -21,8 +21,8 @@ body {
     position: absolute;
     top: 22px;
     left: 49%;
-    z-index: 20000;
-    transition: all 1s ease-out;
+    z-index: 5;
+    transition: all 0.6s ease-out;
 }
 
 
