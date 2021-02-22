@@ -33,6 +33,12 @@ body {
 nav.nav-extended {
     background-color: #eba50e;
     height: 150px;
+    position: fixed;
+    z-index: 1;
+}
+
+section:first-of-type {
+    padding-top: 150px;
 }
 
 nav .brand-logo {
