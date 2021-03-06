@@ -33,7 +33,7 @@ I used [Balsamiq](https://balsamiq.com/) to design some wireframes which can be 
 
 My MongoDB database consists of just two collections.
 
-![database structure](https://github.com/JimEv87/MS3/blob/master/wireframes/DB_structure.PNG?raw=true)
+![database structure](https://github.com/JimEv87/MS3/blob/master/wireframes/DB_structure2.PNG?raw=true)
 
 ## Features
 
