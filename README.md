@@ -89,11 +89,65 @@ I used [Balsamiq](https://balsamiq.com/) to design some wireframes which can be 
 - [werkzeug.security](https://werkzeug.palletsprojects.com/en/1.0.x/utils/)
 - [Python](https://www.python.org/)
 
-### Deployment
+## Deployment
 
-- [Heroku](https://dashboard.heroku.com/)
-- [Github](https://github.com/)
-- [Gitpod](https://gitpod.io/)
+### Requirements 
+- Python3 
+- Github account 
+- MongoDB account 
+- Heroku account
+
+### Clone the project 
+To make a local clone follow these steps: 
+1. Log in to GitHub and navigate to the repository. 
+2. Click on “Code” (green button).
+3. Click on “Open with GitHub Desktop” and follow the prompts. 
+
+### Working with the local copy
+1. After installing the requirements goo to the workspace of your local copy and type pip3 install -r requirements.txt in the terminal window of your IDE.
+2. Create a MongoDB database    
+    - Login to your MongoDB account.
+    - Create a cluster and a database.
+    - Create collections in the database for recipes and users.
+    - Add values as required
+3. Create the environment variables 
+    - Create a .gitignore file in the root directory of the project.
+    - Create the file env.py. This  will contain all the envornment variables.
+    ```
+    Import os
+    os.environ.setdefault("IP", "Added by developer")
+    os.environ.setdefault("PORT", "Added by developer")
+    os.environ.setdefault("SECRET_KEY", "Added by developer")
+    os.environ.setdefault("MONGO_URI", "Added by developer")
+    os.environ.setdefault("MONGO_DBNAME", "Added by developer")
+    ```
+    - Add the env.py file in the .gitignore.
+4. To run the app open your terminal window in your IDE and type python3 app.py.
+
+### Heroku Deployment  
+1. Set up local workspace for Heroku 
+    - Type pip3 freeze -- local > requirements.txt in the terminal window of your IDE so that Heroku knows which file to install.
+    - Type python app.py > Procfile in termial window of your IDE.
+2. Set up Heroku: create a Heroku account and create a new app and select your region. 
+3. Deployment method 'Github'
+    - Click on 'Connect to GitHub' in the deploy tab in Heroku. 
+        - Search your repository and then click Connect to connect your repository with the Heroku. 
+    - Go to Config Vars in the settings app in Heroku. Click on Reveal Config Vars.
+        - Enter the variables contained in your env.py file for IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME
+4. Push the requirements.txt and Procfile to repository. 
+     ```
+    $ git add requirements.txt
+    $ git commit -m "Add requirements.txt"
+
+    $ git add Procfile 
+    $ git commit -m "Add Procfile"
+    ```
+5. Automatic deployment: Go to the deploy tab in Heroku and navigate to Automatic deployments. Click on Enable Automatic Deploys. By Manual deploy click on Deploy Branch.
+
+Heroku will receive the code from Github and host the app using the required packages. 
+Click on Open app in Heroku and the app wil open. 
+
+## Testing
 
 ### Validation
 
@@ -107,28 +161,7 @@ I used [Balsamiq](https://balsamiq.com/) to design some wireframes which can be 
 - [Balsamiq](https://balsamiq.com/) to design the wireframes
 - [Am I Responsive?](http://ami.responsivedesign.is/#) to test the view of the site on different devices
 
-## Testing
-
-
-                                                                                            
-## Deployment
-
-This project is stored in a GitHub repository and hosted on Heroku.
-
-This project was deployed to GitHub pages as follows:
-1. Login to GitHub and open the repository
-2. Click on Settings
-3. Scroll down to the GitHub Pages 
-4. Below Source, change the drop-down selection from None to Master Branch
-5. The automatically refreshes and the site is now deployed
-
-I used only one branch for this project.
-
-### To Make a Clone:
-
-1. Click on 'Code' in the GitHub repository menu and copy the given URL  
-2. In your command prompt type 'cd' followed by the director you wish to store your repository in and press enter
-3. In your command prompt type 'git clone' followed by the URL copied in step 1 
+                                                                    
 
 ## Credits
 
