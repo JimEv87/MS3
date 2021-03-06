@@ -1,6 +1,6 @@
 # Piece of Cake: Delicious Desserts that are a Piece of Cake to Make
 
-![Image of the project on various devices]()
+![Image of the project on various devices](https://github.com/JimEv87/MS3/blob/master/wireframes/responsive_image.PNG?raw=true)
 
 For my Practical Python and Data-Centric Development Milestone Project I have decided to create an interactive Dessert Recipe website that provides an enjoyable user experience which in turn will encourage repeat use.
 
