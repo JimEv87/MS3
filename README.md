@@ -29,6 +29,12 @@ I took a Mobile-First approach to developing Piece of Cake but the website is eq
 
 I used [Balsamiq](https://balsamiq.com/) to design some wireframes which can be seen [here](https://github.com/JimEv87/MS3/tree/master/wireframes)
 
+## Information architecture
+
+My MongoDB database consists of just two collections.
+
+![database structure](wireframes/DB_structure.png)
+
 ## Features
 
 ### Existing Features
