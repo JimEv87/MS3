@@ -131,9 +131,9 @@ To make a local clone follow these steps:
 2. Set up Heroku: create a Heroku account and create a new app and select your region. 
 3. Deployment method 'Github'
     - Click on 'Connect to GitHub' in the deploy tab in Heroku. 
-        - Search your repository and then click Connect to connect your repository with the Heroku. 
+    - Search your repository and then click Connect to connect your repository with the Heroku. 
     - Go to Config Vars in the settings app in Heroku. Click on Reveal Config Vars.
-        - Enter the variables contained in your env.py file for IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME
+    - Enter the variables contained in your env.py file for IP, PORT, SECRET_KEY, MONGO_URI, MONGO_DBNAME
 4. Push the requirements.txt and Procfile to repository. 
      ```
     $ git add requirements.txt
