@@ -72,7 +72,7 @@ $(dishName).keyup(function () {
     $(dishName).val(removeDoubleSpaces);
 });
 
-
+// replace any double-spaces with single-spaces
 let ingredients = $("textarea#ingredients");
 $(ingredients).keyup(function () {
     let ingredientsValue = this.value;
@@ -80,6 +80,7 @@ $(ingredients).keyup(function () {
     $(ingredients).val(removeDoubleSpaces);
 });
 
+// replace any double-spaces with single-spaces
 let method = $("textarea#method");
 $(method).keyup(function () {
     let methodValue = this.value;

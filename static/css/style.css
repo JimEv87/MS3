@@ -2,6 +2,18 @@ body {
     background-color: #f9f9f9;
 }
 
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
+}
+
 .loadup #load-animation {
     height: 4000px;
     width: 4000px;
@@ -63,18 +75,6 @@ nav .brand-logo {
 
 .btn-large:hover {
     background-color: #040aba;
-}
-
-h1 {
-    font-size: 32px;
-}
-
-h2 {
-    font-size: 24px;
-}
-
-h3 {
-    font-size: 20px;
 }
 
 .row.flashes {
