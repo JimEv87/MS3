@@ -196,5 +196,9 @@ I have tested the website for responsiveness on 8 different devices; iPhone5, iP
 - [Balsamiq](https://balsamiq.com/) to design the wireframes
 - [Am I Responsive?](http://ami.responsivedesign.is/#) to test the view of the site on different devices
 
-## Credits
+## Credits and Acknowledgements
 
+- I would like to acknowledge the huge help that Code Institute's Data Centric mini project played in teaching me how to go about building me Recipe website.  
+- My style.css file includes a comment to indicate where code taken from a Stackoverflow post directly helped me display list numbers in bold
+- Stackoverflow.com, Developer.mozilla.org and W3Schools.com continue to be a vital resource of knowledge and guidance to me.
+- I would also like to thank my Mentor Precious Ijege for his valued advice and support, and my friends and family for their assistance with testing.

@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 {% block content %}
 
-
+<!--  user is a registered and logged in user, then the Add recipe template will display -->
 {% if session.user %}
 
 <h3 class="center-align">Add Recipe</h3>
@@ -52,6 +52,7 @@
     </form>
 </div>
 
+<!-- if user is not a registered or logged in user, then they will be directed to log in or register -->
 {% else %}
 
 <h3 class="center-align red-text">You must be logged in to add a recipe</h3>
