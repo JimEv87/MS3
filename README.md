@@ -158,16 +158,43 @@ Click on Open app in Heroku and the app wil open.
 ### Validation
 
 - [HTML Validator](https://validator.w3.org/nu/)
+ - Syntax issues were highlighted on the validator due to the jinja templating. To get around this I used 'View Page Source' on my the site and ran that code through the validator. No errors were shown and the only warnings were to consider using H2-H6 elements in all sections. 
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
+ - No errors found
 - [JavaScript Validator](https://jshint.com/) 
+ - No errors found
 - [Python Validator](http://pep8online.com/)
+ - No errors found
+
+### Browser Testing
+
+I have tested the website on 5 different browsers; Chrome, Safari, Silk, Internet Explorer and MS Edge. The functionality and appearance on each browser is as intended.
+
+### Responsiveness Testing
+
+I have tested the website for responsiveness on 8 different devices; iPhone5, iPhone7, iPad, Galaxy S5, Fire 7 tablet, Laptop with 1366 x 768 pixel screen and a Desktop with a 1920 x 1080 pixel screen. All pages and images render as expected and display correctly.
+
+### User Story Testing
+
+- As a user, I want the opening page to look great and inspire me to explore the recipes.
+ - The homepage is attractively laid out, colourful yet not cluttered.
+- As a user, I want the range of desserts to be displayed in an attractive fashion and with the key bits of information easily viewable.
+ - The full range of desserts are displayed to the user on an automated slideshow with Dish Name, Prep Time and Cook Time clearly shown.
+- As a user, I want to be able to view full details of a recipe with just one click.
+ Clicking on any dessert's Name or Image will take the user through to that dessert's full recipe page.
+- As a user, I want navigation and use to be simple and intuative.
+ - The navbar is always available and each page has additional CTA buttons for ease of navigation.
+- As a user, I want to be able to search for a recipe that I'm interested in.
+ - The search function is in full view on the homepage.
+- As a user, I want to be able to easily submit my own recipes.
+ - Once logged in, users can easily submit recipes
+- As a user, I want to be able to view the recipes I have submitted and have the option to edit or delete them.
+ - Once logged in, users can view each recipe they have submitted and have the option of editing or deleting.
 
 ### Design and Presentation
 
 - [Balsamiq](https://balsamiq.com/) to design the wireframes
 - [Am I Responsive?](http://ami.responsivedesign.is/#) to test the view of the site on different devices
-
-                                                                    
 
 ## Credits
 
