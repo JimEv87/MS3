@@ -158,13 +158,13 @@ Click on Open app in Heroku and the app wil open.
 ### Validation
 
 - [HTML Validator](https://validator.w3.org/nu/)
- - Syntax issues were highlighted on the validator due to the jinja templating. To get around this I used 'View Page Source' on my the site and ran that code through the validator. No errors were shown and the only warnings were to consider using H2-H6 elements in all sections. 
+  - Syntax issues were highlighted on the validator due to the jinja templating. To get around this I used 'View Page Source' on my the site and ran that code through the validator. No errors were shown and the only warnings were to consider using H2-H6 elements in all sections. 
 - [CSS Validator](https://jigsaw.w3.org/css-validator/)
- - No errors found
+  - No errors found
 - [JavaScript Validator](https://jshint.com/) 
- - No errors found
+  - No errors found
 - [Python Validator](http://pep8online.com/)
- - No errors found
+  - No errors found
 
 ### Browser Testing
 
