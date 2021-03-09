@@ -11,6 +11,7 @@ if os.path.exists("env.py"):
 
 app = Flask(__name__)
 
+# ------------------------------------------------------------- Config  #
 app.config["MONGO_DBNAME"] = os.environ.get("MONGO_DBNAME")
 app.config["MONGO_URI"] = os.environ.get("MONGO_URI")
 app.secret_key = os.environ.get("SECRET_KEY")
@@ -18,6 +19,7 @@ app.secret_key = os.environ.get("SECRET_KEY")
 mongo = PyMongo(app)
 
 
+# ------------------------------------------------------------- Homepage  #
 @app.route("/")
 @app.route("/get_recipes")
 def get_recipes():
@@ -110,6 +112,7 @@ def logout():
     return redirect(url_for("login"))
 
 
+# ------------------------------------------------------------- Recipes #
 @app.route("/add_recipe", methods=["GET", "POST"])
 def add_recipe():
     if request.method == "POST":
@@ -163,12 +166,14 @@ def recipe_template(recipe_id):
     return render_template("recipe_template.html", recipe=recipe)
 
 
+# ---------------------------------------------------------- Error Handler #
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404
     
 
+# ---------------------------------------------------------- Run the App #
 if __name__ == "__main__":
     app.run(host=os.environ.get("IP"),
             port=int(os.environ.get("PORT")),
-            debug=True)
+            debug=false)
