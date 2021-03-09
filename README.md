@@ -191,6 +191,11 @@ I have tested the website for responsiveness on 8 different devices; iPhone5, iP
 - As a user, I want to be able to view the recipes I have submitted and have the option to edit or delete them.
   - Once logged in, users can view each recipe they have submitted and have the option of editing or deleting.
 
+### Bugs
+
+- Part way through delevopment I noticed that the Add Recipe, Edit Recipe and Profile pages could all be accessed from their URLs regardless of if a user was logged in or not. I resolved this by adding defensive programming as described above.
+- When testing responsiveness I discovered that the Logo was obscuring one of the menu options at a certain screen size. I resolved this by using a CSS media query to target the menu items at that screen size and make them slightly smaller.
+
 ### Design and Presentation
 
 - [Balsamiq](https://balsamiq.com/) to design the wireframes
